@@ -9,7 +9,6 @@ bot.on('ready', () => {
     bot.user.setPresence({ activity: { name: 'With My Bank Account' }, status: 'online' })
       .then(console.log)
       .catch(console.error);
-      client.login(procces.env.CJ_TOKEN)
 });
 bot.on("message", message =>{
     if(message.author.bot) return;
